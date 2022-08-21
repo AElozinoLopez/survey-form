@@ -12,6 +12,7 @@
        <div class="container">
             <h1>Survey Form</h1>
             <p>Thank you for taking your time to give us feedback</p>
+            
             <div class="survey_form">
                 <form action="mailto:asaijeelozinolopez@gmail.com" method="POST">
                     <label for="name">Name</label> <br>
@@ -30,7 +31,7 @@
                         <option value="techsist">Techsist</option>
                     </select>
                     <br>
-                    <span>Would you recommend our product to a friend?</span><br>
+                    <span>Would you recommend our product to a friend?</span><br> <!-- What tag is best to use here??? -->
                     <input type="radio" name="product-recommendation" value="never">Never <br>
                     <input type="radio" name="product-recommendation" value="never">Maybe <br>
                     <input type="radio" name="product-recommendation" value="never">Likely <br>
@@ -40,6 +41,10 @@
                     <input type="checkbox" name="likeable-products" value="features">Features <br>
                     <input type="checkbox" name="likeable-products" value="service">Service <br>
                     <input type="checkbox" name="likeable-products" value="simpleness">Simpleness <br>
+                    <label for="remarks">Remarks</label> <br>
+                    <textarea name="remarks" id="" cols="30" rows="10">Tell us how we can improve...</textarea>
+                    <br>
+                    <input type="submit">
                 </form>
             </div>
        </div>
