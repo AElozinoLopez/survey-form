@@ -17,20 +17,20 @@
 
             <div class="survey_form">
                 <form action="mailto:asaijeelozinolopez@gmail.com" method="POST">
-                    <label for="name">Name</label> <br>
+                    <label for="name" class="form-description">Name</label> <br>
                     <input type="text" placeholder="Enter your full name..." required>
                     <br>
-                    <label for="email">Email</label><br>
+                    <label for="email" class="form-description">Email</label><br>
                     <input type="email" placeholder="Enter your email..." required> <br>
-                    <label for="age">Age</label><br>
+                    <label for="age" class="form-description">Age</label><br>
                     <input type="number" placeholder="Enter your age..." required> <br>
                     <span>Choose a role that best describes you</span> <br>
                     <select name="role" id="personalized-role" placeholder="Enter your role..."> <!-- The placeholder here is questionable! -->
-                        <option value="enter-role">Enter Your Role</option> <!-- This line is to be reviewed -->
-                        <option value="farmer">Farmer</option>
-                        <option value="teacher">Teacher</option>
-                        <option value="techbro">TechBro</option>
-                        <option value="techsist">Techsist</option>
+                        <option name="role-select" value="enter-role">Enter Your Role</option> <!-- This line is to be reviewed -->
+                        <option name="role-select" value="farmer">Farmer</option>
+                        <option name="role-select" value="teacher">Teacher</option>
+                        <option name="role-select" value="techbro">TechBro</option>
+                        <option name="role-select" value="techsist">Techsist</option>
                     </select>
                     <br>
                     <span>Would you recommend our product to a friend?</span><br> <!-- What tag is best to use here??? -->
