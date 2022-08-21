@@ -20,7 +20,15 @@
                     <label for="email">Email</label><br>
                     <input type="email" placeholder="Enter your email..." required> <br>
                     <label for="age">Age</label><br>
-                    <input type="number" placeholder="Enter your age" required> <br>
+                    <input type="number" placeholder="Enter your age..." required> <br>
+                    <span>Choose a role that best describes you</span> <br>
+                    <select name="role" id="personalized-role" placeholder="Enter your role..."> <!-- The placeholder here is questionable! -->
+                        <option value="enter-role">Enter YOur Role</option> <!-- This line is to be reviewed -->
+                        <option value="farmer">Farmer</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="techbro">TechBro</option>
+                        <option value="techsist">Techsist</option>
+                    </select>
                 </form>
             </div>
        </div>
