@@ -18,15 +18,15 @@
             <div class="survey_form">
                 <form action="mailto:asaijeelozinolopez@gmail.com" method="POST">
                     <label for="name" class="form-description">Name</label> <br>
-                    <input type="text" placeholder="Enter your full name..." required>
+                    <input type="text" class="input-type" placeholder="Enter your full name..." required>
                     <br>
                     <label for="email" class="form-description">Email</label><br>
-                    <input type="email" placeholder="Enter your email..." required> <br>
+                    <input type="email" class="input-type" placeholder="Enter your email..." required> <br>
                     <label for="age" class="form-description">Age</label><br>
-                    <input type="number" placeholder="Enter your age..." required> <br>
+                    <input type="number" class="input-type" placeholder="Enter your age..." required> <br>
                     <span>Choose a role that best describes you</span> <br>
-                    <select name="role" id="personalized-role" placeholder="Enter your role..."> <!-- The placeholder here is questionable! -->
-                        <option name="role-select" value="enter-role">Enter Your Role</option> <!-- This line is to be reviewed -->
+                    <select name="role" id="personalized-role" class="input-type" placeholder="Select your role..."> <!-- The placeholder here is questionable! -->
+                        <option name="role-select" value="enter-role">Select Your Role</option> <!-- This line is to be reviewed -->
                         <option name="role-select" value="farmer">Farmer</option>
                         <option name="role-select" value="teacher">Teacher</option>
                         <option name="role-select" value="techbro">TechBro</option>
@@ -34,17 +34,17 @@
                     </select>
                     <br>
                     <span>Would you recommend our product to a friend?</span><br> <!-- What tag is best to use here??? -->
-                    <input type="radio" name="product-recommendation" value="never">Never <br>
-                    <input type="radio" name="product-recommendation" value="never">Maybe <br>
-                    <input type="radio" name="product-recommendation" value="never">Likely <br>
-                    <input type="radio" name="product-recommendation" value="never">Definitely <br>
+                    <input type="radio" name="product-recommendation" value="never"><span class="radio-option">Never</span> <br>
+                    <input type="radio" name="product-recommendation" value="never"><span class="radio-option">Never</span> <br>
+                    <input type="radio" name="product-recommendation" value="never"><span class="radio-option">Likely</span> <br>
+                    <input type="radio" name="product-recommendation" value="never"><span class="radio-option">Definetely</span> <br>
                     <span>Select things that you like about our product</span><br>
-                    <input type="checkbox" name="likeable-products" value="ui">UI <br>
-                    <input type="checkbox" name="likeable-products" value="features">Features <br>
-                    <input type="checkbox" name="likeable-products" value="service">Service <br>
-                    <input type="checkbox" name="likeable-products" value="simpleness">Simpleness <br>
+                    <input type="checkbox" name="likeable-products" value="ui"><span class="checkbox-option">UI</span> <br>
+                    <input type="checkbox" name="likeable-products" value="features"><span class="checkbox-option">Features</span> <br>
+                    <input type="checkbox" name="likeable-products" value="service"><span class="checkbox-option">Service</span> <br>
+                    <input type="checkbox" name="likeable-products" value="simplicity"><span class="checkbox-option">Simplicity</span> <br>
                     <label for="remarks">Remarks</label> <br>
-                    <textarea name="remarks" id="" cols="30" rows="10">Tell us how we can improve...</textarea>
+                    <textarea name="remarks" placeholder="Tell us how we can improve..." id="" cols="30" rows="10"></textarea>
                     <br>
                     <input type="submit">
                 </form>
